@@ -10,9 +10,9 @@
     <h3>Bienvenido</h2>
     <nav>
         <h5>
-        <ul class="nav">
+        <ul class="menu-horizontal">
             <li><a href="">Apoyo </a>
-                <ul>
+                <ul class="vertical">
                     <li><a href="">Academico</a></li>
                     <li><a href="">psicologico</a></li>
                     <li><a href="">Alfabetizacion</a></li>
@@ -69,6 +69,7 @@
             background-color:#ffea00;
             color: black;
             padding: 2px;
+            
         }
       
         p{
@@ -84,7 +85,36 @@
             text-align: center;
             padding: 2px;
             text-size-adjust: 1px;
-            ;
+            font-size: 15px;
+        }
+        .menu-horizontal {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu-horizontal > li > a{
+            display:block;
+            padding: 15px 20px;
+            color: black;
+            text-decoration: none;
+        }
+        .vertical{
+
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 200px;
+            background-color:#069c6c;
+
+        }
+        .menu-horizontal:hover .vertical{
+            display: block;
+        }
+        .vertical li a{
+            display: block;
+            color:black;
+            padding: 15px 15px 15px 20px;
+            font-size: 15px;
         }
         
         
